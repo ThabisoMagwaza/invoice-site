@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- These meta tags come first. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Create Invoice</title>
+
+    <!-- Include the CSS -->
+    <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic" rel="stylesheet">
+
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.js"
+  integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
+  crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+
+    
+    <link href="assets/css/toolkit-inverse.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        background-color: #0F2030;
+        padding: 0;
+        margin: 0;
+        width: 1px;
+        min-width: 100%;
+        *width: 100%;
+      }
+      #logo {
+        height: 100px;
+      }
+
+
+      #content img {
+        width: 100%;
+        height: 300px ;
+      }
+
+      #dashhead {
+        margin-top: 10px;
+      }
+      .doughnut {
+        position: relative!important;
+        height: 400px !important;
+      }
+      .statcard {
+        height: 120px;
+      }
+      .input-group-text {
+        margin-top: 5px;
+        font-size: 120%;
+      }
+      .amount {
+        padding-left: 2px;
+      }
+    </style>
+    
+    <!--<link href="assets/css/application.css" rel="stylesheet">-->
+  </head>
+  <body>
+
+    <div class="container-fluid">
+      <div class="row" >
+        <div class="col-md-3 sidebar">
+          <nav class="sidebar-nav">
+            <div class="sidebar-header">
+            <button class="nav-toggler nav-toggler-md sidebar-toggler" type="button" data-toggle="collapse" data-target="#nav-toggleable-md">
+              <span class="sr-only">Toggle nav</span>
+            </button>
+            <a class="sidebar-brand img-responsive" href="index.html">
+              <span class="icon  icon-leaf sidebar-brand-icon"></span>
+            </a>
+          </div>
+
+            <div class="collapse nav-toggleable-md" id="nav-toggleable-md" >
+              <ul class="nav nav-pills nav-stacked flex-column">
+                <li class="nav-header">Dashboads</li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Overview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="create-invoice.html" id="create-invoice">Create Invoice</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="invoices.html">Invoices</a>
+                </li>                
+                <li class="nav-item">
+                  <a class="nav-link" href="contacts.html">Contacts</a>
+                </li>                
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Payment Received</a>
+                </li>                
+                <li class="nav-item">
+                  <a class="nav-link" href="outstanding-invoices.html">Outstanding Invoices</a>
+                </li>                
+                <li class="nav-item">
+                  <a class="nav-link" href="my-profile.html">My Profile</a>
+                </li>
+              </ul>
+              <hr class="visible-xs mt-3">
+            </div>
+
+          </nav>
+        </div>
+        <div id="content" class="col-md-9">
+          <div class="dashhead" id="dashhead">
+            <div class="dashhead-titles">
+              <h6 class="dashhead-subtitle">Dashboard</h6>
+              <h2 clsss="dashhead-title">Payment Received</h2>
+            </div>
+
+            <div class="btn-toolbar dashhead-toolbar">
+            <div class="btn-toolbar-item input-with-icon">
+              <input type="text" value="01/01/15 - 01/08/15" class="form-control" data-provide="datepicker">
+              <span class="icon icon-calendar"></span>
+            </div>
+            </div>
+          </div>
+
+          <hr class="mt-3">
+
+        </div>
+
+    </div>
+
+    </div>
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/tether.min.js"></script>
+    <script src="assets/js/chart.js"></script>
+    <script src="assets/js/tablesorter.min.js"></script>
+    <script src="assets/js/toolkit.js"></script>
+    <!--<script src="assets/js/application.js"></script>-->
+    <script>
+      // execute/clear BS loaders for docs
+      // $(function(){while(window.BS&&window.BS.loader&&window.BS.loader.length){(window.BS.loader.pop())()}})
+    if(typeof jQuery == "undefined"){
+      alert("no jquery");
+    }
+    </script>
+  </body>
+</html>
